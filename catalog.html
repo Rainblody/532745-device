@@ -7,19 +7,16 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <p class="main-header-logo-text">DEVICE</p>
-        </a>
+        <h1 class="main-header-logo">
+          <a class="main-header-logo-text" href="index.html">DEVICE</a>
+        </h1>
                 
         <!-- Здесь должна быть форма поиска -->
                 
-        <ul class="main-navigation-sing-in">
+        <ul class="main-navigation-menu">
           <li>
             <a href="sing-in.html"><img src="img/sing-in-icon.png" width="10px" height="10px" alt="Иконка «Войти»"> Войти</a>
           </li>
-        </ul>
-                
-        <ul class="main-navigation-buys-menu">
           <li>
             <a href="compare.html"><img src="img/compare-icon.png" width="10px" height="10px" alt="Иконка «Сравнить»"> Сравнить</a>
           </li>
@@ -30,7 +27,7 @@
                 
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог</a><span>+</span>
+            <a class="modal-categories" href="catalog.html">Каталог<span>+</span></a>
                         
             <ul class="modal-categories-left">
               <li><a href="catalog.html">Виртуальная реальность</a></li>  
@@ -47,20 +44,14 @@
               <li><a href="catalog.html">Квадракоптеры</a></li>
             </ul>
           </li>
-        </ul>
-                
-        <ul class="main-navigation-features">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="guarantee.html">Гарантия</a></li>
-        </ul>
-                
-        <ul class="main-navigation-contacts">
           <li><a href = "contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <h1>Моноподы для селфи</h1>
+      <h2>Моноподы для селфи</h2>
             
       <ul class="breadcrumps">
         <li><a href="index.html">Главная</a></li>
@@ -69,7 +60,7 @@
       </ul>
             
       <section class="filter">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
                 
         <b>Фильтр:</b>
         <!-- Здесь будет форма-->
@@ -80,20 +71,21 @@
           <b>Сортировка:</b>
                     
           <ul class="sorting-types">
-            <li><a class="sorting-type-price">По цене</a></li>
-            <li><a class="sorting-type-type">По типу</a></li>
-            <li><a class="sorting-type-popular">По популярности</a></li>
+            <li><button class="sorting-type-price">По цене</button></li>
+            <li><button class="sorting-type-type">По типу</button></li>
+            <li><button class="sorting-type-popular">По популярности</button></li>
           </ul>
-                    
-          <span class = "arrow-up">↑</span>
-          <span class = "arrow-down">↓</span>
+          <ul class="sorting-arrows">     
+            <li><button class = "arrow-up"><span>↑</span></button></li>
+            <li><button class = "arrow-down"><span>↓</span></button></li>
+          </ul>
         </div>
                 
         <ul class="goods-list">
           <li>
             <img src = "img/selfie-catalog.jpg" width="360px" height="380px" alt="Любительская селфи-палка">
-            <a class="button">В корзину</a>
-            <a class="comparison">Добавить к сравнению</a>
+            <button class="cart">В корзину</button>
+            <button class="comparison">Добавить к сравнению</button>
             <table class="goods-list-table">
               <tr>
                 <th>Любительская селфи-палка</th>
@@ -103,54 +95,48 @@
           </li>
           <li>
             <img src = "img/pro-selfie-catalog.jpg" width="360px" height="380px" alt="Профессиональная селфи-палка">
-            <a class="button">В корзину</a>
-            <a class="comparison">Добавить к сравнению</a>
-            <table class="goods-list-table">
-              <tr>
-                <th>Профессиональная селфи-палка</th>
-                <td>1 500 руб.</td>
-              </tr>
-            </table>
+            <button class="cart">В корзину</button>
+            <button class="comparison">Добавить к сравнению</button>
+            <div class="goods-list-table">
+              <a href="">Профессиональная селфи-палка</a>
+              <b>1 500 руб.</b>
+            </div>
           </li>
           <li>
             <img src = "img/water-selfie-catalog.jpg" width="360px" height="380px" alt="Непотопляемая селфи-палка">
-            <a class="button">В корзину</a>
-            <a class="comparison">Добавить к сравнению</a>
-            <table class="goods-list-table">
-              <tr>
-                <th>Непотопляемая селфи-палка</th>
-                <td>2 500 руб.</td>
-              </tr>
-            </table>
+            <button class="cart">В корзину</button>
+            <button class="comparison">Добавить к сравнению</button>
+            <div class="goods-list-table">
+              <a href="">Непотопляемая селфи-палка</a>
+              <b>2 500 руб.</b>
+            </div>
           </li>
           <li>
             <img src = "img/follow-me-selfie-catalog.jpg" width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
-            <a class="button">В корзину</a>
-            <a class="comparison">Добавить к сравнению</a>
-            <table class="goods-list-table">
-              <tr>
-                <th>Селфи-палка «Следуй за мной»</th>
-                <td>4 900 руб.</td>
-              </tr>
-            </table>
+            <button class="cart">В корзину</button>
+            <button class="comparison">Добавить к сравнению</button>
+            <div class="goods-list-table">
+              <a href="">Селфи-палка «Следуй за мной»</a>
+              <b>4 900 руб.</b>
+            </div>
           </li>
         </ul>
                   
         <div class="pages">
-          <span class="back-button">Назад</span>
+          <button class="back-button">Назад</button>
           <ul class="pages-list">
-            <li><span>1</span></li>
-            <li><span>2</span></li>
-            <li><span>3</span></li>
+            <li><button>1</button></li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
           </ul>
-          <span class="forward-button">Вперед</span>
+          <button class="forward-button">Вперед</button>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="main-footer-logo">
-        <p class="main-footer-logo-text">DEVICE</p>
-      </a>
+      <p class="main-footer-logo">
+        <a class="main-footer-logo-text" href="index.html">DEVICE</a>
+      </p>
               
       <ul class="main-footer-interface">
         <li>
@@ -174,9 +160,9 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
                 
-      <p>
-        Тел: +7 (495) 495-95-95
-      </p>
+      
+      <a class="telephone" href = "tel:+74954959595">Тел: +7 (495) 495-95-95</a>
+      
             
       <div class="main-footer-social">
         <ul>
@@ -186,7 +172,7 @@
         </ul>
       </div>
             
-      <a class="main-footer-icon" href="htmlacademy.ru"><img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy"></a>
+      <a class="main-footer-icon" href="https://up.htmlacademy.ru/htmlcss/21"><img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy"></a>
     </footer>
   </body>
 </html>
