@@ -11,24 +11,27 @@
           <a class="main-header-logo-text" href="index.html">DEVICE</a>
         </h1>
                   
-        <!-- Здесь должна быть форма поиска -->
-        <img src="img/search-icon.png" width="16px" height="16px" alt="Иконка «Поиск»">
+        <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
         
+        <form class="search-form">
+          <input type="search" class="search" name="search" placeholder="Поиск по сайту">
+        </form>
+          
         <ul class="main-navigation-menu">
           <li>
-            <a href="sing-in.html"><img src="img/sing-in-icon.png" width="13px" height="13px" alt="Иконка «Войти»"> Войти</a>
+            <a href="sing-in.html"><img src="img/user.svg" width="13px" height="12px" alt="Иконка «Войти»"> Войти</a>
           </li>
           <li>
-            <a href="compare.html"><img src="img/compare-icon.png" width="10px" height="10px" alt="Иконка «Сравнить»"> Сравнить</a>
+            <a href="compare.html"><img src="img/compare.svg" width="10px" height="10px" alt="Иконка «Сравнить»"> Сравнить</a>
           </li>
           <li>
-            <a href="cart.html"><img src="img/cart-icon.png" width="12px" height="12px" alt="Иконка «Корзина»"> Корзина</a>
+            <a href="cart.html"><img src="img/cart.svg" width="12px" height="12px" alt="Иконка «Корзина»"> Корзина</a>
           </li>
         </ul>
 
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог<span>+</span></a>
+            <a class="modal-categories" href="catalog.html">Каталог</a><button class="modal-categories-button">+</button>
                           
             <ul class="modal-categories-left">
               <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -68,6 +71,12 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
+            
+            <ul class="preview-buttons">
+              <li><button class="preview-button-checked">O</button></li>
+              <li><button class="preview-button">O</button></li>
+              <li><button class="preview-button">O</button></li>
+            </ul>
                     
             <table class="preview-selfie-table">
               <tr>
@@ -95,6 +104,12 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
+            
+            <ul class="preview-buttons">
+              <li><button class="preview-button">O</button></li>
+              <li><button class="preview-button-checked">O</button></li>
+              <li><button class="preview-button">O</button></li>
+            </ul>
                     
             <table class="preview-bracelet-table">
               <tr>
@@ -118,6 +133,12 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
+            
+            <ul class="preview-buttons">
+              <li><button class="preview-button">O</button></li>
+              <li><button class="preview-button">O</button></li>
+              <li><button class="preview-button-checked">O</button></li>
+            </ul>
                     
             <table class="preview-copter-table">
               <tr>
@@ -130,12 +151,6 @@
               </tr>
             </table>
           </li>
-        </ul>
-        
-        <ul class="preview-buttons">
-          <li><input type="radio"></li>
-          <li><input type="radio"></li>
-          <li><input type="radio"></li>
         </ul>
       </section>
             
@@ -294,13 +309,21 @@
         
     <section class="modal modal-letter">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <button class="modal-categories-button">x</button>
+      <form class="write-to-us-form">
+        <label>Ваше имя: <input type="text" name="name" class="write-to-us-form-name" placeholder="Имя Фамилия"></label>
+        <label>Ваш e-mail: <input type="email" name="email" class="write-to-us-form-email" placeholder="email@example.com"></label>
+        <label>
+          Текст письма:
+          <textarea class="letter-text" placeholder="В свободной форме"></textarea>
+        </label>
+        <input type="submit" name="submit" class="write-to-us-form-submit" value="Отправить">
+      </form>
     </section>
         
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
+      <button class="modal-categories-button">x</button>
       <img class="modal-map-image" src="img/map-big.jpg" width="999px" height="598px" alt="Изображение карты">
     </section>
   </body>

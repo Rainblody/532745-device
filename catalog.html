@@ -10,28 +10,31 @@
         <h1 class="main-header-logo">
           <a class="main-header-logo-text" href="index.html">DEVICE</a>
         </h1>
-                
-        <!-- Здесь должна быть форма поиска -->
-        <img src="img/search-icon.png" width="16px" height="16px" alt="Иконка «Поиск»">
+                  
+        <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
         
+        <form class="search-form">
+          <input type="search" class="search" name="search" placeholder="Поиск по сайту">
+        </form>
+          
         <ul class="main-navigation-menu">
           <li>
-            <a href="sing-in.html"><img src="img/sing-in-icon.png" width="13px" height="13px" alt="Иконка «Войти»"> Войти</a>
+            <a href="sing-in.html"><img src="img/user.svg" width="13px" height="12px" alt="Иконка «Войти»"> Войти</a>
           </li>
           <li>
-            <a href="compare.html"><img src="img/compare-icon.png" width="10px" height="10px" alt="Иконка «Сравнить»"> Сравнить</a>
+            <a href="compare.html"><img src="img/compare.svg" width="10px" height="10px" alt="Иконка «Сравнить»"> Сравнить</a>
           </li>
           <li>
-            <a href="cart.html"><img src="img/cart-icon.png" width="12px" height="12px" alt="Иконка «Корзина»"> Корзина</a>
+            <a href="cart.html"><img src="img/cart.svg" width="12px" height="12px" alt="Иконка «Корзина»"> Корзина</a>
           </li>
         </ul>
-                
+
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог<span>+</span></a>
-                        
+            <a class="modal-categories" href="catalog.html">Каталог</a><button class="modal-categories-button">+</button>
+                          
             <ul class="modal-categories-left">
-              <li><a href="catalog.html">Виртуальная реальность</a></li>  
+              <li><a href="catalog.html">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="catalog.html">Экшн-камеры</a></li>
             </ul>
@@ -40,7 +43,7 @@
               <li><a href="catalog.html">Фитнес-браслеты</a></li>
               <li><a href="catalog.html">Умные часы</a></li>
             </ul>
-                        
+                          
             <ul class="modal-categories-right">
               <li><a href="catalog.html">Квадракоптеры</a></li>
             </ul>
@@ -64,7 +67,29 @@
         <h3 class="visually-hidden">Фильтр товаров</h3>
                 
         <b>Фильтр:</b>
-        <!-- Здесь будет форма-->
+        <form class="filter-form">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" class="filter-price">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Цвет</legend>
+            <label><input type="checkbox" class="filter-color"> Черный</label>
+            <label><input type="checkbox" class="filter-color"> Белый</label>
+            <label><input type="checkbox" class="filter-color"> Синий</label>
+            <label><input type="checkbox" class="filter-color"> Красный</label>
+            <label><input type="checkbox" class="filter-color"> Розовый</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label><input type="radio" class="filter-bluetooth"> Есть</label>
+            <label><input type="radio" class="filter-bluetooth"> Нет</label>
+          </fieldset>
+          
+          <input class="filter-submit" type="submit" value="Показать">
+        </form>
       </section>
             
       <section class="goods">
@@ -72,13 +97,13 @@
           <b>Сортировка:</b>
                     
           <ul class="sorting-types">
-            <li><a class="sorting-type-price">По цене</a></li>
-            <li><a class="sorting-type-type">По типу</a></li>
-            <li><a class="sorting-type-popular">По популярности</a></li>
+            <li><a class="sorting-type-price" href="#">По цене</a></li>
+            <li><a class="sorting-type-type" href="#">По типу</a></li>
+            <li><a class="sorting-type-popular" href="#">По популярности</a></li>
           </ul>
           <ul class="sorting-arrows">     
-            <li><a class = "arrow-up"><span>↑</span></a></li>
-            <li><a class = "arrow-down"><span>↓</span></a></li>
+            <li><a class = "arrow-up" href="#"><span>↑</span></a></li>
+            <li><a class = "arrow-down" href="#"><span>↓</span></a></li>
           </ul>
         </div>
                 
@@ -122,13 +147,13 @@
         </ul>
                   
         <div class="pages">
-          <a class="back-button">Назад</a>
+          <a class="back-button" href="#">Назад</a>
           <ul class="pages-list">
-            <li><a>1</a></li>
-            <li><a>2</a></li>
-            <li><a>3</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
-          <a class="forward-button">Вперед</a>
+          <a class="forward-button" href="#">Вперед</a>
         </div>
       </section>
     </main>
