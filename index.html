@@ -71,12 +71,6 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
-            
-            <ul class="preview-buttons">
-              <li><button class="preview-button-checked">O</button></li>
-              <li><button class="preview-button">O</button></li>
-              <li><button class="preview-button">O</button></li>
-            </ul>
                     
             <table class="preview-selfie-table">
               <tr>
@@ -104,12 +98,6 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
-            
-            <ul class="preview-buttons">
-              <li><button class="preview-button">O</button></li>
-              <li><button class="preview-button-checked">O</button></li>
-              <li><button class="preview-button">O</button></li>
-            </ul>
                     
             <table class="preview-bracelet-table">
               <tr>
@@ -133,12 +121,6 @@
             </p>
                     
             <a class="button" href="more.html">Подробнее</a>
-            
-            <ul class="preview-buttons">
-              <li><button class="preview-button">O</button></li>
-              <li><button class="preview-button">O</button></li>
-              <li><button class="preview-button-checked">O</button></li>
-            </ul>
                     
             <table class="preview-copter-table">
               <tr>
@@ -151,6 +133,12 @@
               </tr>
             </table>
           </li>
+        </ul>
+        
+        <ul class="preview-buttons">
+          <li><input type="radio"></li>
+          <li><input type="radio"></li>
+          <li><input type="radio"></li>
         </ul>
       </section>
             
@@ -309,7 +297,7 @@
         
     <section class="modal modal-letter">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <button class="modal-categories-button">x</button>
+      <button class="modal-close">x</button>
       <form class="write-to-us-form">
         <label>Ваше имя: <input type="text" name="name" class="write-to-us-form-name" placeholder="Имя Фамилия"></label>
         <label>Ваш e-mail: <input type="email" name="email" class="write-to-us-form-email" placeholder="email@example.com"></label>
@@ -317,13 +305,13 @@
           Текст письма:
           <textarea class="letter-text" placeholder="В свободной форме"></textarea>
         </label>
-        <input type="submit" name="submit" class="write-to-us-form-submit" value="Отправить">
+        <button class="write-to-us-form-submit">Отправить</button>
       </form>
     </section>
         
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button class="modal-categories-button">x</button>
+      <button class="modal-close">x</button>
       <img class="modal-map-image" src="img/map-big.jpg" width="999px" height="598px" alt="Изображение карты">
     </section>
   </body>

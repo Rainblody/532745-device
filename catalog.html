@@ -14,7 +14,8 @@
         <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
         
         <form class="search-form">
-          <input type="search" class="search" name="search" placeholder="Поиск по сайту">
+          <label class="visually-hidden" id="search">Поиск</label>
+          <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
         </form>
           
         <ul class="main-navigation-menu">
@@ -31,7 +32,7 @@
 
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог</a><button class="modal-categories-button">+</button>
+            <a class="modal-categories" href="catalog.html">Каталог<b>+</b></a>
                           
             <ul class="modal-categories-left">
               <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -88,7 +89,7 @@
             <label><input type="radio" class="filter-bluetooth"> Нет</label>
           </fieldset>
           
-          <input class="filter-submit" type="submit" value="Показать">
+          <button class="filter-submit">Показать</button>
         </form>
       </section>
             
@@ -102,8 +103,8 @@
             <li><a class="sorting-type-popular" href="#">По популярности</a></li>
           </ul>
           <ul class="sorting-arrows">     
-            <li><a class = "arrow-up" href="#"><span>↑</span></a></li>
-            <li><a class = "arrow-down" href="#"><span>↓</span></a></li>
+            <li><a class = "arrow-up" href="#">↑</a></li>
+            <li><a class = "arrow-down" href="#">↓</a></li>
           </ul>
         </div>
                 
