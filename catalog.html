@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Device»</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="font/gilroy.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +18,6 @@
         <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
         
         <form class="search-form">
-          <label class="visually-hidden" id="search">Поиск</label>
           <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
         </form>
           
@@ -32,7 +35,7 @@
 
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог<span>+</span></a>
+            <a class="modal-categories" href="catalog.html">Каталог товаров <img class="plus" src="img/plus.svg" width="16px" height="16px" alt="Развернуть каталог"></a>
                           
             <ul class="modal-categories-left">
               <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -67,7 +70,7 @@
       <section class="filter">
         <h3 class="visually-hidden">Фильтр товаров</h3>
                 
-        <b>Фильтр:</b>
+        <div class="filter-top"><b>Фильтр:</b></div>
         <form class="filter-form">
           <fieldset>
             <legend>Стоимость</legend>
@@ -85,8 +88,8 @@
           
           <fieldset>
             <legend>Bluetooth</legend>
-            <label><input type="radio" class="filter-bluetooth"> Есть</label>
-            <label><input type="radio" class="filter-bluetooth"> Нет</label>
+            <label><input type="radio" class="filter-bluetooth" name="1" checked value="1"> Есть</label>
+            <label><input type="radio" class="filter-bluetooth" name="" value="2"> Нет</label>
           </fieldset>
           
           <button class="filter-submit" type="submit">Показать</button>
@@ -103,8 +106,8 @@
             <li><a class="sorting-type-popular" href="#">По популярности</a></li>
           </ul>
           <ul class="sorting-arrows">     
-            <li><a class = "arrow-up" href="#">↑</a></li>
-            <li><a class = "arrow-down" href="#">↓</a></li>
+            <li><a class = "arrow-up" href="#"><img src="img/icon-up-dir.svg"></a></li>
+            <li><a class = "arrow-down" href="#"><img src="img/icon-down-dir.svg"></a></li>
           </ul>
         </div>
                 
@@ -114,7 +117,7 @@
             <a class="cart">В корзину</a>
             <button class="comparison">Добавить к сравнению</button>
             <div class="goods-information">
-              <a href="">Любительская селфи-палка</a>
+              <a href="" class="good-name">Любительская селфи-палка</a>
               <b>500 руб.</b>
             </div>
           </li>
@@ -123,7 +126,7 @@
             <a class="cart">В корзину</a>
             <button class="comparison">Добавить к сравнению</button>
             <div class="goods-information">
-              <a href="">Профессиональная селфи-палка</a>
+              <a href="" class="good-name">Профессиональная селфи-палка</a>
               <b>1 500 руб.</b>
             </div>
           </li>
@@ -132,7 +135,7 @@
             <a class="cart">В корзину</a>
             <button class="comparison">Добавить к сравнению</button>
             <div class="goods-information">
-              <a href="">Непотопляемая селфи-палка</a>
+              <a href="" class="good-name">Непотопляемая селфи-палка</a>
               <b>2 500 руб.</b>
             </div>
           </li>
@@ -141,7 +144,7 @@
             <a class="cart">В корзину</a>
             <button class="comparison">Добавить к сравнению</button>
             <div class="goods-information">
-              <a href="">Селфи-палка «Следуй за мной»</a>
+              <a href="" class="good-name">Селфи-палка «Следуй за мной»</a>
               <b>4 900 руб.</b>
             </div>
           </li>
