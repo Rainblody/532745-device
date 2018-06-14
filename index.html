@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Device»</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="font/gilroy.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -35,7 +35,9 @@
 
         <ul class="main-navigation-catalog">
           <li>
-            <a class="modal-categories" href="catalog.html">Каталог товаров <img class="plus" src="img/plus.svg" width="16px" height="16px" alt="Развернуть каталог"></a>
+            <a class="modal-categories" href="catalog.html">Каталог товаров 
+              <img class="plus" src="img/plus.svg" width="16px" height="16px" alt="Развернуть каталог">
+            </a>
                           
             <ul class="modal-categories-left">
               <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -151,22 +153,46 @@
                   
         <ul class="categories-list">
           <li>
-            <a class = "categories-list-vr" href="catalog.html"><div class="categories-container"><img class="categories-list-vr-image" src="img/popular-1.svg" width="97px" height="55px" alt="Виртуальная реальность"></div> Виртуальная реальность</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-vr-image" src="img/popular-1.svg" width="97px" height="55px" alt="Виртуальная реальность">
+              </div> Виртуальная реальность
+            </a>
           </li>
           <li>
-            <a class = "categories-list-selfies" href="catalog.html"><div class="categories-container"><img class="categories-list-selfies-image" src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи"></div> Моноподы для селфи</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-selfies-image" src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи">
+              </div> Моноподы для селфи
+            </a>
           </li>
           <li>
-            <a class = "categories-list-action" href="catalog.html"><div class="categories-container"><img class="categories-list-action-image" src="img/popular-3.svg" width="71px" height="87px" alt="Экшн-камера"></div> Экшн-камеры</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-action-image" src="img/popular-3.svg" width="71px" height="87px" alt="Экшн-камера">
+              </div> Экшн-камеры
+            </a>
           </li>
           <li>
-            <a class = "categories-list-fitness" href="catalog.html"><div class="categories-container"><img class="categories-list-fitness-image" src="img/popular-4.svg" width="107px" height="65px" alt="Фитнес-браслеты"></div> Фитнес-браслеты</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-fitness-image" src="img/popular-4.svg" width="107px" height="65px" alt="Фитнес-браслеты">
+              </div> Фитнес-браслеты
+            </a>
           </li>
           <li>
-            <a class = "categories-list-smart" href="catalog.html"><div class="categories-container"><img class="categories-list-smart-image" src="img/popular-5.svg" width="56px" height="98px" alt="Умные часы"></div> Умные часы</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-smart-image" src="img/popular-5.svg" width="56px" height="98px" alt="Умные часы">
+              </div> Умные часы
+            </a>
           </li>
           <li>
-            <a class = "categories-list-copters" href="catalog.html"><div class="categories-container"><img class="categories-list-copters-image" src="img/popular-6.svg" width="132px" height="69px" alt="Квадракоптеры"></div> Квадракоптеры</a>
+            <a class = "categories-list-item" href="catalog.html">
+              <div class="categories-container">
+                <img class="categories-list-copters-image" src="img/popular-6.svg" width="132px" height="69px" alt="Квадракоптеры">
+              </div> Квадракоптеры
+            </a>
           </li>
         </ul>
       </section>
@@ -215,10 +241,25 @@
         <h2 class="visually-hidden">Наши бренды</h2>
                 
         <ul class="partners-list">
-          <li><a class="partners-list-dgi" href="partner.html"><img class="partners-list-image" src="img/dgi.png" width="260px" height="100px" alt="Логотип Dgi"></a></li>
-          <li><a class="partners-list-spgadgets" href="partner.html"><img class="partners-list-image" src="img/spgadgets.png" width="260px" height="100px" alt="Логотип SpGagets"></a></li>
-          <li><a class="partners-list-gopro" href="partner.html"><img class="partners-list-image" src="img/gopro.png" width="260px" height="100px" alt="Логотип GoPro"></a></li>
-          <li><a class="partners-list-vive" href="partner.html"><img class="partners-list-image" src="img/vive.png" width="260px" height="100px" alt="Логотип Vive"></a></li>
+          <li><a class="partners-list-brand" href="partner.html">
+            <img class="partners-list-image" src="img/dgi.png" width="260px" height="100px" alt="Логотип Dgi">
+            </a>
+          </li>
+          <li>
+            <a class="partners-list-brand" href="partner.html">
+              <img class="partners-list-image" src="img/spgadgets.png" width="260px" height="100px" alt="Логотип SpGagets">
+            </a>
+          </li>
+          <li>
+            <a class="partners-list-brand" href="partner.html">
+              <img class="partners-list-image" src="img/gopro.png" width="260px" height="100px" alt="Логотип GoPro">
+            </a>
+          </li>
+          <li>
+            <a class="partners-list-brand" href="partner.html">
+              <img class="partners-list-image" src="img/vive.png" width="260px" height="100px" alt="Логотип Vive">
+            </a>
+          </li>
         </ul>
       </section>
             
@@ -250,7 +291,9 @@
           Всякое бывает.
         </p>
                 
-        <a class="contacts-map" href="map.html"><img class="contacts-map-image" src="img/map.jpg" width="560px" height="222px" alt="Изображение карты"></a>
+        <a class="contacts-map" href="map.html">
+          <img class="contacts-map-image" src="img/map.jpg" width="560px" height="222px" alt="Изображение карты">
+        </a>
                 
         <a class="button" href="letter.html">Напишите нам</a>
       </section>
@@ -296,7 +339,9 @@
                 
         <a class="telephone" href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
             
-        <a class="main-footer-icon" href="https://up.htmlacademy.ru/htmlcss/21"><img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy"></a>
+        <a class="main-footer-icon" href="https://up.htmlacademy.ru/htmlcss/21">
+          <img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy">
+        </a>
       </div>
     </footer>
         
