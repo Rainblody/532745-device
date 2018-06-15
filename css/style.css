@@ -1,4 +1,4 @@
-﻿body {
+﻿body{
   margin: 0;
   padding: 0;
 
@@ -11,8 +11,12 @@
   background-color: #ffffff;
 }
 
-a {
+a{
   text-decoration: none;
+}
+
+ul{
+  list-style: none;
 }
 
 .main-navigation{
@@ -47,14 +51,9 @@ a {
   color: #ffffff;
 }
 
-.main-navigation-catalog span{
-  font-family: "Open Sans", Tahoma, sans-serif;
-  height: 16px;
-  width: 16px;
-  opacity: 0.8;
-}
-
-.main-navigation-catalog ul{
+.modal-categories-left,
+.modal-categories-center,
+.modal-categories-right{
   font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 15px;
   line-height: 36px;
@@ -62,12 +61,6 @@ a {
   letter-spacing: normal;
   text-transform: none;
   color: #ffffff;
-}
-
-.main-navigation-menu,
-.main-navigation-catalog,
-.main-navigation-catalog ul{
-  list-style: none;
 }
 
 .main-navigation a{
@@ -84,10 +77,6 @@ a {
 
 .preview{
   background-color: #ffffff;
-}
-
-.preview-slides{
-  list-style: none;
 }
 
 .preview-lead{
@@ -118,16 +107,8 @@ a {
   color: #464646;
 }
 
-.preview-buttons{
-  list-style: none;
-}
-
 .categories{
   background-color: #ffffff;
-}
-
-.categories-list{
-  list-style: none;
 }
 
 .categories-list a{
@@ -171,10 +152,6 @@ a.button:active{
   color: rgba(0,0,0,0.3);
 }
 
-.feature-buttons-list{
-  list-style: none;
-}
-
 .feature-buttons-list button{
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
@@ -189,16 +166,12 @@ a.button:active{
   border: none;
 }
 
-.features-list{
-  list-style: none;
-}
-
 .features-list li{
   background-color: #e5e5e5;
   color: #464646;
 }
 
-.features-list li h3{
+.features-list h3{
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -207,10 +180,6 @@ a.button:active{
 
 .partners{
   background-color: #ffffff;
-}
-
-.partners-list{
-  list-style: none;
 }
 
 .partners-list-image{
@@ -262,7 +231,6 @@ a.button:active{
 .main-footer ul{
   background-color: #464646;
   color: #ffffff;
-  list-style: none;
 }
 
 .main-footer-logo{
@@ -432,8 +400,6 @@ a.button:active{
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  
-  list-style: none;
 }
 
 .breadcrumps a{
@@ -510,10 +476,6 @@ a.button:active{
   color: #000000;
 }
 
-.sorting ul{
-  list-style: none;
-}
-
 .sorting-types a{
   font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 14px;
@@ -533,10 +495,6 @@ a.button:active{
 
 .sorting-arrows a:hover{
   opacity: 1;
-}
-
-.goods-list{
-  list-style: none;
 }
 
 .cart{
@@ -593,10 +551,6 @@ a.button:active{
 
 .pages a{
   color: #000000;
-}
-
-.pages ul{
-  list-style: none;
 }
 
 .pages-list a{
