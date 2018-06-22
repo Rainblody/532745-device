@@ -842,109 +842,87 @@ a.button:active{
 
 .headlines-container{
   width: 100%;
-  padding: 0 auto;
-  
-  display: flex;
-  background-color: #e5e5e5;
+  background-image:  linear-gradient(to right,#dbdbdb,#dbdbdb 50%,#ebebeb 50%,#ebebeb);
 }
 
 .headlines{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .filter-headline{
-  width: 468px;
-  box-sizing: border-box;
-  padding-left: 160px;
-  background-color: #dcdcdc;
+  background-color: #dbdbdb;
+  width: 328px;
 }
 
 .sorting-headline{
-  width: 972px;
-  box-sizing: border-box;
-  padding-right: 110px;
-  background-color: #e5e5e5;
+  background-color: #ebebeb;
+  width: 832px;
 }
 
 .sorting{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.sorting-types{
-  width: 300px;
+.sorting ul{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 
-.sorting-arrows{
-  display: flex;
-  width: 40px;
-  justify-content: space-between;
-}
-
-.catalog-content-container{
-  display: flex;
+.content-container{
   width: 100%;
+  background-image:  linear-gradient(to right,#ebebeb,#ebebeb 50%,#ffffff 50%,#ffffff);
+}
+
+.content{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .filter{
-  width: 468px;
-  box-sizing: border-box;
-  padding-left: 160px;
-  background-color: #e5e5e5;
+  background-color: #ebebeb;
+  width: 328px;
 }
 
-.checkboxes,
-.radios{
-  display: flex;
-  flex-direction: column;
-}
-
-.goods-container{
-  width: 972px;
-  box-sizing: border-box;
+.items{
   background-color: #ffffff;
-  
-  display: flex;
-  flex-direction: column;
-}
-.goods-first-row,
-.goods-second-row{
-  width: 1000px;
+  width: 832px;
 }
 
-.goods{
+.item-list{
+  width: 760px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.goods-list{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
   margin-left: 72px;
-}
-
-.second-item{
-  margin-left: 40px;
 }
 
 .pages{
-  display: flex;
+  background-color: #ebebeb;
   width: 760px;
-  justify-content: space-between;
-  margin-left: 72px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .pages-list{
+  width: 90px;
   display: flex;
-  width: 110px;
   justify-content: space-between;
+}
+
+.goods-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .plus{
