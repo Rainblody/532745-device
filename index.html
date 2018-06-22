@@ -10,23 +10,20 @@
   </head>
   <body>
       
-    <div class="main-header-container">
-      <header class="main-header">
+    
+    <header class="main-header">
+      <div class="main-navigation-container">
         <nav class="main-navigation">
           <div class="main-logo-row">
             <h1 class="main-header-logo">
-              <a class="main-header-logo-text" href="index.html">DEVICE</a>
+              <a class="main-header-logo-text" >DEVICE</a>
             </h1>
           </div>
           <div class="first-header-row">
-            <div class="first-header-row-search">
-              <div class="search-container">
-                <form class="search-form">
-                  <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
-                  <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
-                </form>
-              </div>
-            </div>
+            <form class="search-form">
+              <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
+              <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
+            </form>
             <div class="first-header-row-navigation">
               <div class="sing-in-container">
                 <a class="sing-in-link" href="sing-in.html">
@@ -59,14 +56,15 @@
             </ul>
           </div>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
+    
     
     <main>
-      <div class="slider-container">
+      
         <section class="preview">
           <ul class="preview-slides">     
-            <li class="preview-selfie">
+            <li class="preview-item">
            <!--   <h3 class="visually-hidden">Превью селфи-палки</h3> -->
               <div class="preview-image-container">
                 <img class="preview-image" src="img/selfie.png" width="384px" height="486px" alt="Самая длинная селфи-палка">
@@ -97,9 +95,7 @@
             </li>
           </ul>
         </section>
-      </div>
       
-      <div class="categories-section-container">
         <section class="categories">
           <ul class="categories-list">
             <li>
@@ -146,40 +142,38 @@
             </li>
           </ul>
         </section>
-      </div>
       
-      <div class="features-container">
-        <section class="features">
+      
+      
+      <section class="features">
+        <div class="features-container">
+      
+          <ul class="feature-buttons-list">
+            <li><button>Доставка</button></li>
+            <li><button>Гарантия</button></li>
+            <li><button>Кредит</button></li>
+          </ul>
           
-          <div class="feature-buttons-list-container">
-            <ul class="feature-buttons-list">
-              <li><button>Доставка</button></li>
-              <li><button>Гарантия</button></li>
-              <li><button>Кредит</button></li>
-            </ul>
-          </div>
-
-          <div class="features-list-container">
-            <ul class="features-list">
-              <li class="features-list-item">
-                <h3>Доставка</h3>
-                <div class="features-list-content">
-                  <div class="features-list-text">
-                    <p>
-                      Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                      совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                      на ваш этаж.
-                    </p>
-                  </div>
-                  <img class="delivery-image" src="img/delivery.svg" width="136px" height="164px" alt="Картинка курьера">
+          <ul class="features-list">
+            <li class="features-list-item">
+              <h3 class="features-list-headline">Доставка</h3>
+              <div class="features-list-content">
+                <div class="features-list-text">
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                    совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                    на ваш этаж.
+                  </p>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+                <img class="delivery-image" src="img/delivery.svg" width="136px" height="164px" alt="Картинка курьера">
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </section>
       
-      <div class="partners-container">
+      
+      
         <section class="partners">
           <ul class="partners-list">
             <li>
@@ -204,16 +198,16 @@
             </li>
           </ul>
         </section>
-      </div>
       
-      <div class="main-information-container">
-        <section class="about-us">
-          <h2>О нас</h2>
+      
+      <section class="main-information-container">
+        <div class="about-us">
+          <h2 class="about-us-headline">О нас</h2>
                 
-          <p>
+          <p class="about-us-text">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
-          <p>
+          <p class="about-us-text">
             Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.
           </p>
 
@@ -224,12 +218,12 @@
           </ul>
                 
           <a class="button" href="more.html">Подробнее о нас</a>
-        </section>
+        </div>
             
-        <section class="contacts">
-          <h2>Контакты</h2>
+        <div class="contacts">
+          <h2 class="contacts-headline">Контакты</h2>
                   
-          <p>
+          <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис.
             Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.
@@ -240,12 +234,12 @@
           </a>
                 
           <a class="button" href="letter.html">Напишите нам</a>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
       
-    <div class="main-footer-container">
-      <footer class="main-footer">
+    <footer class="main-footer">
+      <div class="main-footer-navigation">
         <div class="main-footer-left-column">
           <p class="main-footer-logo">
             <a class="main-footer-logo-text" href="index.html">DEVICE</a>
@@ -256,7 +250,7 @@
         </div> 
       
         <div class="main-footer-center-column">
-                
+                  
           <ul class="main-footer-features">
             <li><a href="delivery.html">Доставка</a></li>
             <li><a href="guarantee.html">Гарантия</a></li>
@@ -289,7 +283,7 @@
             <img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy">
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
