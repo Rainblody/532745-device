@@ -56,7 +56,7 @@ a{
 
 .search:focus {
   border-bottom: 2px solid black;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 .search-submit{
@@ -619,8 +619,11 @@ a.button:active{
   
 }
 
-.main-navigation-container{
-  width: 1160px;
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   width: 1160px;
   box-sizing: border-box;
   min-height: 186px;
   
@@ -628,12 +631,6 @@ a.button:active{
   padding-right: 57px;
   
   background-color: #f7e296;
-}
-
-.main-navigation{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .first-header-row{
@@ -687,8 +684,6 @@ a.button:active{
 }
 
 .preview{
-  padding-left: 60px;
-  padding-right: 57px;
   margin: 0 auto;
   
   width: 1160px;
@@ -1051,10 +1046,18 @@ a.button:active{
   padding: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.visually-hidden:not(:focus):not(:active){
+position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
