@@ -1,6 +1,6 @@
 ﻿body{
   font-family: "Open Sans", Tahoma, sans-serif;
-  font-sze: 15px;
+  font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #000000;
@@ -1051,4 +1051,10 @@ a.button:active{
   padding: 0;
 }
 
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
