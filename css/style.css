@@ -27,7 +27,7 @@ a{
 
 .main-header-logo{
   font-family: "Gilroy", Tahoma, sans-serif;
-  font-size: 47.8px;
+  font-size: 48px;
   line-height: 48px;
   font-weight: 800;
   letter-spacing: 0.7px;
@@ -60,14 +60,6 @@ a{
   outline: none; 
 }
 
-
-.search:focus~ .search-submit,
-.search-submit:hover,
-.search-submit:active,
-.search-submit:focus{
-    display: block;
-}
-
 .search-submit{
   width: 81px;
   height: 49px;
@@ -84,10 +76,17 @@ a{
   box-sizing: border-box;
 }
 
+.search:focus~ .search-submit,
+.search-submit:hover,
+.search-submit:active,
+.search-submit:focus{
+    display: block;
+}
+
 .search-submit:hover{
   background-color: #000000;
   color: #ffffff;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .search-submit:active{
@@ -112,7 +111,7 @@ a{
 
 .main-navigation a:hover{
   opacity: 0.6;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .main-navigation a:active{
@@ -243,7 +242,7 @@ a{
 
 .categories-container:hover{ 
   background-color: #f0c52e;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .button{
@@ -277,7 +276,7 @@ a{
 }
 
 .button:hover{
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: #f0c52e;
   transition-property: all;
 }
@@ -336,7 +335,7 @@ a{
 
 .partners-list-image:hover{
   filter: none;
-  transition: 1s;
+  transition: 0.3s;
   opacity: 1;
 }
 
@@ -354,7 +353,7 @@ a{
 }
 
 .about-us-delivery-list{
-  list-style: url(https://a.radikal.ru/a41/1806/5c/155f5fe74d08.png);
+  list-style: url(../img/list-icon.png);
   
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
@@ -363,7 +362,7 @@ a{
   
   position: relative;
   top: 49px;
-  right: 22.5px;
+  right: 23px;
   
 }
 
@@ -405,12 +404,12 @@ a{
 
 .main-footer-logo-text:hover{
   opacity: 0.8;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .main-footer-logo-text:active{
   opacity: 0.5;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .main-footer-interface a{
@@ -420,7 +419,7 @@ a{
 
 .main-footer-interface a:hover{
   color: #ffffff;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .main-footer-interface a:hover img{
@@ -437,7 +436,7 @@ a{
 
 .main-footer-social a:hover{
   opacity: 1;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .main-footer-social a:active{
@@ -464,18 +463,6 @@ a{
 
 .main-footer-features a:active{
   opacity: 0.3;
-}
-
-.sing-in-link-text{
-  margin-left: 15px;
-}
-
-.compare-link-text{
-  margin-left: 15px;
-}
-
-.cart-link-text{
-  margin-left: 15px;
 }
 
 .telephone{
@@ -564,6 +551,7 @@ a{
   width: 960px;
   border: none;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  animation: bounce 0.6s;
 }
 
 .modal-letter{
@@ -583,6 +571,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: bounce 0.6s;
 }
 
 .write-to-us-form-name,
@@ -978,7 +967,7 @@ a{
   margin: 0 auto;
   
   width: 1160px;
-  height: 486px;
+  min-height: 486px;
   position: relative;
   bottom: 111px;
    z-index: 3;
@@ -995,7 +984,7 @@ a{
   padding-left: 20px;
   padding-right: 20px;
   width: 1140px;
-  height: 486px;
+  min-height: 486px;
 }
 
 .preview-item{
@@ -1005,7 +994,7 @@ a{
    z-index: 4;
   
   width: 1140px;
-  height: 486px;
+  min-height: 486px;
 }
 
 #slider-button-1:checked ~ #item-1,
@@ -1017,9 +1006,8 @@ a{
 .slider-button-1::before,
 .slider-button-2::before,
 .slider-button-3::before{
-  content: url(https://c.radikal.ru/c08/1806/01/79a0e7c3e1af.png);
-  width: 12px;
-  height: 12px;
+  content: url(../img/slider-button-empty.png);
+
 }
 
 .slider-buttons{
@@ -1034,9 +1022,7 @@ a{
 #slider-button-1:checked ~ .slider-buttons .slider-button-1::before,
 #slider-button-2:checked ~ .slider-buttons .slider-button-2::before,
 #slider-button-3:checked ~ .slider-buttons .slider-button-3::before{
-  content: url(https://a.radikal.ru/a18/1806/22/34d1f2ad62cf.png);
-  width: 12px;
-  height: 12px;
+  content: url(../img/slider-button.png);
 }
 
 .preview-image-container{
@@ -1054,7 +1040,7 @@ a{
   margin-top: 79px;
   margin-left: 67px;
   width: 531px;
-  height: 252px;
+  min-height: 252px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1063,7 +1049,7 @@ a{
 }
 
 .preview-content-container::before{
-  content: url(https://a.radikal.ru/a11/1806/32/82d1aa1928c6.png);
+  content: url(../img/string.png);
   display: block;
   position: absolute;
   right: 459px;
@@ -1094,7 +1080,7 @@ a{
   width: auto;
   background-color: #e5e5e5;
   margin-top: 181px;
-  height: 288px;
+  min-height: 288px;
 }
 
 .feature-buttons-container{
@@ -1139,7 +1125,7 @@ a{
 }
 
 .feature-button:hover{
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: #f0c52e;
   transition-property: all;
 }
@@ -1173,7 +1159,7 @@ a{
   margin: 0 auto;
   
   width: 1160px;
-  height: 288px;
+  min-height: 288px;
   
   position: relative;
   display: flex;
@@ -1237,11 +1223,11 @@ a{
 }
 
 .about-us{
-  height: 570px;
+  min-height: 570px;
 }
 
 .contacts{
-  height: 570px;
+  min-height: 570px;
 }
 
 .about-us-headline{
@@ -1341,11 +1327,11 @@ a{
 }
 
 .about-us:before{
-  content: url(https://c.radikal.ru/c22/1806/3c/784e9708a6db.png);
+  content: url(../img/black-string.png);
   display: block;
   position: absolute;
   right: 419px;
-  bottom: 606px;
+  top: -66px;
 }
 
 .contacts{
@@ -1354,11 +1340,11 @@ a{
 }
 
 .contacts:before{
-  content: url(https://c.radikal.ru/c22/1806/3c/784e9708a6db.png);
+  content: url(../img/black-string.png);
   display: block;
   position: absolute;
   right: 479px;
-  bottom: 606px;
+  top: -66px;
 }
 
 .main-footer{
@@ -1396,7 +1382,7 @@ a{
 }
 
 .main-footer-left-column::before{
-  content: url(https://a.radikal.ru/a04/1806/f7/cd328636e4e1.png);
+  content: url(../img/yellow-string.png);
   display: block;
   position: absolute;
   top: 163px;
@@ -1618,7 +1604,7 @@ overflow: hidden;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-   width: 1160px;
+  width: 1160px;
   padding-left: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1631,11 +1617,7 @@ overflow: hidden;
   
 }
 
-.modal-fitness{
-  margin-left: 60px;
-}
-
-.modal-smart{
+.modal-fitness-smart{
   margin-left: 60px;
 }
 
@@ -1664,6 +1646,9 @@ overflow: hidden;
   height: 55px;
   border: none;
   opacity: 0.8;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .modal-close:hover{
@@ -1673,3 +1658,49 @@ overflow: hidden;
 .modal-close:active{
   opacity: 0.5;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
