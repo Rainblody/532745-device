@@ -10,17 +10,20 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      
+      <nav class="main-navigation catalog-main-navigation">
         <div class="main-logo-row">
           <h1 class="main-header-logo">
             <a class="main-header-logo-text" href="index.html">DEVICE</a>
           </h1>
         </div>
-        <div class="first-header-row">
+        <div class="first-header-row catalog-first-header-row">
           <form class="search-form">
-            <img src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
+            <div class="search-image-container">
+              <img class="search-image" src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
+            </div>
             <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
-            <button type="submit" class="search-submit visually-hidden">Найти</button>
+            <button type="submit" class="search-submit ">Найти</button>  
           </form>
           <div class="first-header-row-navigation">
             <div class="sing-in-container">
@@ -41,12 +44,23 @@
           </div>
         </div>
           
-        <div class="second-header-row">
+        <div class="second-header-row catalog-second-header-row">
           <ul class="main-navigation-catalog">
             <li class="main-navigation-catalog-item">
               <a class="modal-categories" href="catalog.html">Каталог товаров 
                 <img class="plus" src="img/plus.svg" width="16px" height="16px" alt="Развернуть каталог">
               </a>
+                
+              <ul class="modal-categories-list">
+                <li><a href="catalog.html" class="modal-vr">Виртуальная реальность</a></li>
+                <li><a href="catalog.html" class="modal-mono">Моноподы для селфи</a></li>
+                <li><a href="catalog.html" class="modal-action">Экшн-камеры</a></li>        
+                
+                <li><a href="catalog.html" class="modal-fitness-smart">Фитнес-браслеты</a></li>
+                <li><a href="catalog.html" class="modal-fitness-smart">Умные часы</a></li>
+                
+                <li><a href="catalog.html" class="modal-copters">Квадракоптеры</a></li>
+              </ul>
             </li>
             <li class="main-navigation-delivery"><a href="delivery.html">Доставка</a></li>
             <li class="main-navigation-guarantee"><a href="guarantee.html">Гарантия</a></li>
@@ -54,6 +68,7 @@
           </ul>
         </div>
       </nav>
+      
     </header>
     
     <main class="container">

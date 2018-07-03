@@ -810,8 +810,6 @@ a{
 
 .main-header{
   margin: 0 auto;
-  padding-left: 60px;
-  padding-right: 57px;
   
   width: 1160px;
   
@@ -836,6 +834,10 @@ a{
   height: 299px;
 }
 
+.catalog-main-navigation{
+  height: 186px;
+}
+
 .first-header-row{
   display: flex;
   flex-wrap: nowrap;
@@ -844,6 +846,10 @@ a{
   position: relative;
   bottom: 102px;
   
+}
+
+.catalog-first-header-row{
+  bottom: 45px;
 }
 
 .search-image{
@@ -951,6 +957,10 @@ a{
   position: relative;
   bottom: 163px;
   right: 1px;
+}
+
+.catalog-second-header-row{
+  bottom: 50px;
 }
 
 .main-navigation-catalog{
