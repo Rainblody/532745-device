@@ -1703,7 +1703,7 @@ a{
 .filter-headline{
   background-color: #dbdbdb;
   width: 268px;
-  padding-left: 80px;
+  padding-left: 60px;
   height: 70px;
   display: flex;
   flex-direction: column;
@@ -1751,7 +1751,7 @@ a{
   background-color: #ebebeb;
   width: 268px;
   height: 1213px;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .filter-form{
