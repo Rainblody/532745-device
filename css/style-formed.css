@@ -220,14 +220,14 @@ a{
   width: 380px;
 }
 
-.preview-table tr th {
+.preview-table th {
   font-family: "Open Sans", Tahoma, sans-serif;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: normal;
   font-weight: 300;
   color: #464646;
-  
+  text-align: left;
 }
 
 .categories{

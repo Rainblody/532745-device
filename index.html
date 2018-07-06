@@ -20,7 +20,7 @@
           <div class="first-header-row">
             <form class="search-form">
               <div class="search-image-container">
-                <img class="search-image" src="img/search.svg" width="16px" height="16px" alt="Иконка «Поиск»">
+                <img class="search-image" src="img/search.svg" width="16" height="16" alt="Иконка «Поиск»">
               </div>
               <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
               <button type="submit" class="search-submit ">Найти</button>  
@@ -28,17 +28,17 @@
             <div class="first-header-row-navigation">
               <div class="sing-in-container">
                 <a class="sing-in-link" href="sing-in.html">
-                  <img src="img/user.svg" width="13px" height="12px" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span>
+                  <img src="img/user.svg" width="13" height="12" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span>
                 </a>
               </div>
               <div class="compare-container">
                 <a class="compare-link" href="compare.html">
-                  <img src="img/compare.svg" width="10px" height="10px" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span>
+                  <img src="img/compare.svg" width="10" height="10" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span>
                 </a>
               </div>
               <div class="cart-container">
                 <a class="cart-link" href="cart.html">
-                  <img src="img/cart.svg" width="13px" height="12px" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span>
+                  <img src="img/cart.svg" width="13" height="12" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span>
                 </a>
               </div>
             </div>
@@ -48,7 +48,7 @@
             <ul class="main-navigation-catalog">
               <li class="main-navigation-catalog-item">
                 <a class="modal-categories" href="catalog.html">Каталог товаров 
-                  <img class="plus" src="img/plus.svg" width="16px" height="16px" alt="Развернуть каталог">
+                  <img class="plus" src="img/plus.svg" width="16" height="16" alt="Развернуть каталог">
                 </a>
                 
                 <ul class="modal-categories-list">
@@ -75,9 +75,8 @@
     <main>
       
         <section class="preview">
-          <ul class="preview-slides">
-            <h2 class="visually-hidden">Превью</h2>
-              
+          <h2 class="visually-hidden">Превью</h2>
+          <div class="preview-slides">
             <input type="radio" class="visually-hidden" id="slider-button-1" name="slider-button" value="1" checked>
             <input type="radio" class="visually-hidden" id="slider-button-2" name="slider-button" value="2">
             <input type="radio" class="visually-hidden" id="slider-button-3" name="slider-button" value="3">
@@ -88,10 +87,10 @@
               <label for="slider-button-3" class="slider-button-3"></label>
             </div>
                 
-            <li class="preview-item" id="item-1">
+            <div class="preview-item" id="item-1">
               <h3 class="visually-hidden">Превью селфи-палки</h3> 
               <div class="preview-image-container">
-                <img class="preview-image" src="img/selfie.png" width="384px" height="486px" alt="Самая длинная селфи-палка">
+                <img class="preview-image" src="img/selfie.png" width="384" height="486" alt="Самая длинная селфи-палка">
               </div>
               
               <div class="preview-content-container">
@@ -110,19 +109,19 @@
                     <td>5 кг</td>
                     <td>Карбон</td>
                   </tr>
-                  <tr>
+                  <tr class="th-row">
                     <th>Длина палки</th>
                     <th>Вес палки</th>
                     <th>Материал</th>
                   </tr>
                 </table>
               </div>
-            </li>
+            </div>
             
-            <li class="preview-item" id="item-2">
+            <div class="preview-item" id="item-2">
               <h3 class="visually-hidden">Превью фитнес-браслета</h3> 
               <div class="preview-image-container">
-                <img class="preview-image" src="img/bracelet.png" width="345px" height="485px" alt="Мотивирующий фитнес-браслет">
+                <img class="preview-image" src="img/bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
               </div>
               
               <div class="preview-content-container">
@@ -144,11 +143,11 @@
                   </tr>
                 </table>
               </div>
-            </li>
-            <li class="preview-item" id="item-3">
+            </div>
+            <div class="preview-item" id="item-3">
               <h3 class="visually-hidden">Превью Квадракоптера</h3> 
               <div class="preview-image-container">
-                <img class="preview-image" src="img/copter.png" width="526px" height="334px" alt="Боевой квадракоптер">
+                <img class="preview-image" src="img/copter.png" width="526" height="334" alt="Боевой квадракоптер">
               </div>
               
               <div class="preview-content-container">
@@ -172,8 +171,8 @@
                   </tr>
                 </table>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
       
         <section class="categories">
@@ -182,42 +181,42 @@
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-vr" src="img/popular-1.svg" width="97px" height="55px" alt="Виртуальная реальность">
+                  <img class="categories-list-image-vr" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
                 </div> Виртуальная реальность
               </a>
             </li>
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-selfie" src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи">
+                  <img class="categories-list-image-selfie" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                 </div> Моноподы<br> для селфи
               </a>
             </li>
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-action" src="img/popular-3.svg" width="71px" height="87px" alt="Экшн-камера">
+                  <img class="categories-list-image-action" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камера">
                 </div> Экшн-камеры
               </a>
             </li>
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-fitnes" src="img/popular-4.svg" width="107px" height="65px" alt="Фитнес-браслеты">
+                  <img class="categories-list-image-fitnes" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
                 </div> Фитнес-браслеты
               </a>
             </li>
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-smart" src="img/popular-5.svg" width="56px" height="98px" alt="Умные часы">
+                  <img class="categories-list-image-smart" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                 </div> Умные часы
               </a>
             </li>
             <li>
               <a class = "categories-list-item" href="catalog.html">
                 <div class="categories-container">
-                  <img class="categories-list-image-copters" src="img/popular-6.svg" width="132px" height="69px" alt="Квадракоптеры">
+                  <img class="categories-list-image-copters" src="img/popular-6.svg" width="132" height="69" alt="Квадракоптеры">
                 </div> Квадракоптеры
               </a>
             </li>
@@ -256,7 +255,7 @@
                     на ваш этаж.
                   </p>
                 </div>
-                <img class="feature-image" src="img/delivery.svg" width="136px" height="164px" alt="Картинка курьера">
+                <img class="feature-image" src="img/delivery.svg" width="136" height="164" alt="Картинка курьера">
               </div>
             </li>
             <li class="features-list-item" id="feature-2">
@@ -269,7 +268,7 @@
                     Товар, не дом, конечно же.
                   </p>
                 </div>
-                <img class="feature-image" src="img/warranty.svg" width="171px" height="194px" alt="Картинка службы поддержки">
+                <img class="feature-image" src="img/warranty.svg" width="171" height="194" alt="Картинка службы поддержки">
               </div>
             </li>
             <li class="features-list-item" id="feature-3">
@@ -282,7 +281,7 @@
                     условия кредита. Выгодные для нашего банка, разумеется.
                   </p>
                 </div>
-                <img class="feature-image" src="img/credit.svg" width="156px" height="186px" alt="Картинка долговой ямы">
+                <img class="feature-image" src="img/credit.svg" width="156" height="186" alt="Картинка долговой ямы">
               </div>
             </li>
           </ul> 
@@ -296,22 +295,22 @@
           <ul class="partners-list">
             <li>
               <a class="partners-list-dgi" href="partner.html">
-                <img class="partners-list-image" src="img/dgi.png" width="260px" height="100px" alt="Логотип Dgi">
+                <img class="partners-list-image" src="img/dgi.png" width="260" height="100" alt="Логотип Dgi">
               </a>
             </li>
             <li>
               <a class="partners-list-spgadgets" href="partner.html">
-                <img class="partners-list-image" src="img/spgadgets.png" width="260px" height="100px" alt="Логотип SpGagets">
+                <img class="partners-list-image" src="img/spgadgets.png" width="260" height="100" alt="Логотип SpGagets">
               </a>
             </li>
             <li>
               <a class="partners-list-gopro" href="partner.html">
-                <img class="partners-list-image" src="img/gopro.png" width="260px" height="100px" alt="Логотип GoPro">
+                <img class="partners-list-image" src="img/gopro.png" width="260" height="100" alt="Логотип GoPro">
               </a>
             </li>
             <li>
               <a class="partners-list-vive" href="partner.html">
-                <img class="partners-list-image" src="img/vive.png" width="260px" height="100px" alt="Логотип Vive">
+                <img class="partners-list-image" src="img/vive.png" width="260" height="100" alt="Логотип Vive">
               </a>
             </li>
           </ul>
@@ -348,7 +347,7 @@
           </p>
                 
           <a class="contacts-map" href="map.html">
-            <img class="contacts-map-image" src="img/map.jpg" width="560px" height="222px" alt="Изображение карты">
+            <img class="contacts-map-image" src="img/map.jpg" width="560" height="222" alt="Изображение карты">
           </a>
                 
           <a class="button write-us-button" href="letter.html">Напишите нам</a>
@@ -376,29 +375,29 @@
           </ul>
         
           <ul class="main-footer-social">
-            <li><a class="social-button" href="#"><img src="img/fb.svg" width="32px" height="32px" alt="Иконка «Фейсбук»"></a></li>
-            <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32px" height="32px" alt="Иконка «Инстаграм»"></a></li>
-            <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32px" height="32px" alt="Иконка «Твиттер»"></a></li>
+            <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Иконка «Фейсбук»"></a></li>
+            <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Иконка «Инстаграм»"></a></li>
+            <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Иконка «Твиттер»"></a></li>
           </ul>
         </div>
             
         <div class="main-footer-right-column">
           <ul class="main-footer-interface">
             <li>
-              <a class="sing-in-footer-link" href="sing-in.html"><img src="img/sing-in-icon-yellow.png"  width="13px" height="13px" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span></a>
+              <a class="sing-in-footer-link" href="sing-in.html"><img src="img/sing-in-icon-yellow.png"  width="13" height="13" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span></a>
             </li>
             <li>
-              <a class="compare-footer-link" href="compare.html"><img src="img/compare-icon-yellow.png" width="10px" height="10px" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span></a>
+              <a class="compare-footer-link" href="compare.html"><img src="img/compare-icon-yellow.png" width="10" height="10" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span></a>
             </li>
             <li>
-              <a class="cart-footer-link" href="cart.html"><img src="img/cart-icon-yellow.png" width="12px" height="12px" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span></a>
+              <a class="cart-footer-link" href="cart.html"><img src="img/cart-icon-yellow.png" width="12" height="12" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span></a>
             </li>
           </ul>
                 
           <a class="telephone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             
           <a class="main-footer-icon" href="https://up.htmlacademy.ru/htmlcss/21">
-            <img src="img/htmlacademy.png" width="27px" height="35px" alt="Логотип HtmlAcademy">
+            <img src="img/htmlacademy.png" width="27" height="35" alt="Логотип HtmlAcademy">
           </a>
         </div>
       </div>
