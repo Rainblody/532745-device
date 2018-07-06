@@ -861,7 +861,7 @@ a{
   justify-content: space-between;
   position: relative;
   bottom: 1px;
-  right: 18px;
+  right: 10px;
 }
 
 .sorting-arrows a{
@@ -1707,7 +1707,7 @@ a{
 .filter-headline{
   background-color: #dbdbdb;
   width: 268px;
-  padding-left: 60px;
+  padding-left: 75px;
   height: 70px;
   display: flex;
   flex-direction: column;
@@ -1755,7 +1755,7 @@ a{
   background-color: #ebebeb;
   width: 268px;
   height: 1213px;
-  padding-left: 60px;
+  padding-left: 75px;
 }
 
 .filter-form{
@@ -1765,6 +1765,8 @@ a{
   flex-direction: column;
   justify-content: space-between;
   margin-top: 69px;
+  position: relative;
+  right: 3px;
 }
 
 .items{
@@ -2183,12 +2185,12 @@ overflow: hidden;
 
 .radio-name-1{
   position: absolute;
-  top: 55px;
+  top: -7px;
 }
 
 .radio-name-2{
   position: absolute;
-  top: 95px;
+  top: 33px;
 }
 
 .filter-submit{
