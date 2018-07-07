@@ -13,10 +13,8 @@ var mapPopup = document.querySelector(".modal-2");
 var mapClose = mapPopup.querySelector(".modal-close");
   
 formLink.addEventListener("click", function (evt) {
-  
   evt.preventDefault();
   formPopup.classList.add("modal-letter");
-  formName.focus();
 });
 
 formClose.addEventListener("click", function (evt) {
@@ -28,6 +26,8 @@ formClose.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!formName.value || !email.value || !letter.value) {
     evt.preventDefault();
+    formPopup.classList.remove("modal-error");
+    formPopup.offsetWidth = formPopup.offsetWidth;
     formPopup.classList.add("modal-error");
   }
 });
