@@ -1369,7 +1369,7 @@ a{
 
 .features-list-item{
   display: none;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 300px;
   position: relative;
   bottom: 78px;
@@ -1417,10 +1417,14 @@ a{
 }
 
 .features-list-text{
-  margin-top: 18px;
+  margin-top: 33px;
+  position: relative;
+  bottom: 2px;
+  right: 3px;
 }
 
 .feature-image{
+  position: absolute;
 }
 
 .partners-container{
@@ -2260,7 +2264,8 @@ a{
 
 .feature-image{
   position: absolute;
-  left: 100px;
+  left: 95px;
+  top: 12px;
 }
 
 .checked{
