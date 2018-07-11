@@ -112,6 +112,10 @@ a{
   background-color: #f7e296;
 }
 
+.categories p{
+  margin: 0;
+}
+
 .search:hover{
   opacity: 0.6;
 }
@@ -166,6 +170,13 @@ a{
   list-style: none;
 }
 
+.features-list-text-2{
+  margin: 0;
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+
 .main-navigation a{
   color: #000000;
 }
@@ -189,7 +200,12 @@ a{
   text-transform: none;
   color: #000000;
   margin: 0;
+  max-width: 1000px;
   padding: 0;
+}
+
+.modal p{
+  margin: 0;
 }
 
 .preview-text{
@@ -303,6 +319,10 @@ a{
 
 .categories-container:active img{
   opacity: 0.3;
+}
+
+.items p{
+  margin: 0;
 }
 
 .button{
@@ -1380,7 +1400,7 @@ a{
 .features-container{
   margin: 0 auto;
   width: 1160px;
-  min-height: 288px;
+  height: 288px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -1460,6 +1480,10 @@ a{
 
 .about-us-text-2{
   margin-top: 30px;
+}
+
+.about-us-text-3{
+  margin: 0;
 }
 
 .contacts-text{
@@ -2267,6 +2291,10 @@ a{
   position: absolute;
   left: 95px;
   top: 12px;
+}
+
+.preview-text-2{
+  margin: 0;
 }
 
 .checked{
