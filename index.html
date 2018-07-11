@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Device»</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-formed.css">
   </head>
   <body>
       
@@ -77,9 +77,9 @@
       <section class="preview">
         <h2 class="visually-hidden">Превью</h2>
         <div class="preview-slides">
-          <input type="radio" class="visually-hidden" id="slider-button-1" name="slider-button" value="1" checked>
-          <input type="radio" class="visually-hidden" id="slider-button-2" name="slider-button" value="2">
-          <input type="radio" class="visually-hidden" id="slider-button-3" name="slider-button" value="3">
+          <input type="radio" class="visually-hidden" id="slider-button-1" name="slider-button" value="1" checked alt="Кнопка-переключатель слайдов">
+          <input type="radio" class="visually-hidden" id="slider-button-2" name="slider-button" value="2" alt="Кнопка-переключатель слайдов">
+          <input type="radio" class="visually-hidden" id="slider-button-3" name="slider-button" value="3" alt="Кнопка-переключатель слайдов">
             
           <div class="slider-buttons">
             <label for="slider-button-1" class="slider-button-1"></label>
@@ -106,12 +106,12 @@
               <table class="preview-table preview-table-1">
                 <tr>
                   <td>8,5 м</td>
-                  <td>5 кг</td>
+                  <td class="middle-table-column">5 кг</td>
                   <td>Карбон</td>
                 </tr>
                 <tr class="th-row">
                   <th>Длина палки</th>
-                  <th>Вес палки</th>
+                  <th class="middle-table-column">Вес палки</th>
                   <th>Материал</th>
                 </tr>
               </table>
@@ -121,7 +121,7 @@
           <div class="preview-item" id="item-2">
             <h3 class="visually-hidden">Превью фитнес-браслета</h3> 
             <div class="preview-image-container">
-                <img class="preview-image" src="img/bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+                <img class="preview-image bracelet" src="img/bracelet.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             </div>
               
             <div class="preview-content-container">
@@ -147,7 +147,7 @@
           <div class="preview-item" id="item-3">
             <h3 class="visually-hidden">Превью Квадракоптера</h3> 
             <div class="preview-image-container">
-              <img class="preview-image" src="img/copter.png" width="526" height="334" alt="Боевой квадракоптер">
+              <img class="preview-image copter" src="img/copter.png" width="526" height="334" alt="Боевой квадракоптер">
             </div>
               
             <div class="preview-content-container">
@@ -163,11 +163,11 @@
               <table class="preview-table preview-table-3">
                 <tr>
                   <td>800 м</td>
-                  <td>50 м</td>
+                  <td class="middle-table-column">50 м</td>
                 </tr>
                 <tr>
                   <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
+                  <th class="middle-table-column">Радиус поражения</th>
                 </tr>
               </table>
             </div>
@@ -232,9 +232,9 @@
         <div class="features-container">
           
           
-            <input type="radio" class="visually-hidden" id="feature-button-1" name="feature-button" value="1" checked>
-            <input type="radio" class="visually-hidden" id="feature-button-2" name="feature-button" value="2">
-            <input type="radio" class="visually-hidden" id="feature-button-3" name="feature-button" value="3">
+            <input type="radio" class="visually-hidden" id="feature-button-1" name="feature-button" value="1" checked alt="Кнопка-переключатель слайдов">
+            <input type="radio" class="visually-hidden" id="feature-button-2" name="feature-button" value="2" alt="Кнопка-переключатель слайдов">
+            <input type="radio" class="visually-hidden" id="feature-button-3" name="feature-button" value="3" alt="Кнопка-переключатель слайдов">
           
           
           <div class="feature-buttons-container">
@@ -254,6 +254,8 @@
                   совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                   на ваш этаж.
                 </p> 
+              </div>
+              <div class="features-image-container">
                 <img class="feature-image" src="img/delivery.svg" width="136" height="164" alt="Картинка курьера">
               </div>
             </li>
@@ -387,13 +389,13 @@
         <div class="main-footer-right-column">
           <ul class="main-footer-interface">
             <li>
-              <a class="sing-in-footer-link" href="sing-in.html"><img src="img/sing-in-icon-yellow.png"  width="13" height="13" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span></a>
+              <a class="sing-in-footer-link footer-interface-link" href="sing-in.html"><img src="img/sing-in-icon-yellow.png"  width="13" height="13" alt="Иконка «Пользователь»"> <span class="sing-in-link-text">Войти</span></a>
             </li>
             <li>
-              <a class="compare-footer-link" href="compare.html"><img src="img/compare-icon-yellow.png" width="10" height="10" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span></a>
+              <a class="compare-footer-link footer-interface-link" href="compare.html"><img src="img/compare-icon-yellow.png" width="10" height="10" alt="Иконка «Сравнить»"> <span class="compare-link-text">Сравнить</span></a>
             </li>
             <li>
-              <a class="cart-footer-link" href="cart.html"><img src="img/cart-icon-yellow.png" width="12" height="12" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span></a>
+              <a class="cart-footer-link footer-interface-link" href="cart.html"><img src="img/cart-icon-yellow.png" width="12" height="12" alt="Иконка «Корзина»"> <span class="cart-link-text">Корзина</span></a>
             </li>
           </ul>
                 

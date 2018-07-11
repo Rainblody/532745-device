@@ -328,7 +328,7 @@ a{
   width: 200px;
   position: absolute;
   left: 80px;
-  top: 180px;
+  top: 190px;
   z-index: 10;
   display: none;
 }
@@ -608,7 +608,7 @@ a{
 
 .write-to-us-form{
   width:760px;
-  height: 295px;
+  min-height: 295px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -640,7 +640,7 @@ a{
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  height: 553px;
+  minheight: 553px;
   width: 960px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   background-color: #ffffff;
@@ -658,6 +658,11 @@ a{
   width: 360px;
   padding-left: 20px;
   box-sizing: border-box;
+  margin-bottom: 93px;
+}
+
+.letter-text{
+  margin-top: -93px;
 }
 
 .write-to-us-form-name,
@@ -669,6 +674,8 @@ a{
   font-weight: 300;
   border: none;
   background-color: #f2f2f2;
+  margin-top: 7px;
+  bottom: 37px;
 }
 
 .write-to-us-form-name:hover,
@@ -704,6 +711,15 @@ a{
 
 .letter-text{
   resize: none;
+}
+
+.moved-list-item{
+  margin-left: -37px;
+}
+
+.moved-list-item-2{
+  position: relative;
+  left: 20px;
 }
 
 .write-to-us-form-submit{
@@ -841,6 +857,10 @@ a{
   opacity: 0.7;
 }
 
+.sorting-types .checked{
+  opacity: 1;
+}
+
 .sorting-types a:active{
   opacity: 1;
 }
@@ -856,6 +876,10 @@ a{
 
 .sorting-arrows a{
   opacity: 0.3;
+}
+
+.sorting-arrows .checked{
+  opacity: 1;
 }
 
 .sorting-arrows a:hover{
@@ -892,6 +916,7 @@ a{
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 0.01em;
 }
 
 .goods-information{
@@ -967,6 +992,7 @@ a{
   position: relative;
   left: 4px;
   top: 2px;
+  min-width: 90px;
 }
 
 .pages-button{
@@ -976,6 +1002,10 @@ a{
 .pages-list a{
   color: #000000;
   opacity: 0.3;
+}
+
+.pages-list .checked{
+  opacity: 1;
 }
 
 .pages-list a:hover{
@@ -1218,6 +1248,17 @@ a{
   margin-left: 13px;
 }
 
+.bracelet{
+  position: relative;
+  top: 25px;
+}
+
+.copter{
+  position: relative;
+  left: 5px;
+  bottom: 10px;
+}
+
 .preview-content-container{
   margin-top: 79px;
   margin-left: 67px;
@@ -1380,9 +1421,6 @@ a{
 }
 
 .feature-image{
-  position: absolute;
-  left: 556px;
-  bottom: 10px;
 }
 
 .partners-container{
@@ -1610,6 +1648,7 @@ a{
 
 .content-top-headline{
   margin: 0;
+  letter-spacing: 0.01em;
 }
 
 .content-top{
@@ -1811,12 +1850,12 @@ a{
 }
 
 .modal-fitness-smart{
-  margin-left: 60px;
+  margin-left: 57px;
 }
 
 .modal-copters{
   position: relative;
-  left: 250px;
+  left: 243px;
   bottom: 72px;
 }
 
@@ -2066,7 +2105,7 @@ a{
   top: 74px;
 }
 
-.checkbox-name-4:{
+.checkbox-name-4{
   top: 114px;
 }
 
@@ -2148,12 +2187,12 @@ a{
 
 .radio-name-1{
   position: absolute;
-  top: -7px;
+  top: 55px;
 }
 
 .radio-name-2{
   position: absolute;
-  top: 33px;
+  top: 97px;
 }
 
 .filter-submit{
@@ -2168,7 +2207,7 @@ a{
 
 .exit-link-header{
   opacity: 0.3;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .exit-link{
@@ -2207,5 +2246,23 @@ a{
 }
 .partners-list-image-link:hover .image-hided{
   display: block;
+  opacity: 1;
+}
+
+.middle-table-column{
+  position: relative;
+  right: 8px;
+}
+
+.features-image-container{
+  position: relative;
+}
+
+.feature-image{
+  position: absolute;
+  left: 100px;
+}
+
+.checked{
   opacity: 1;
 }
