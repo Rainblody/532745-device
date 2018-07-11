@@ -1,16 +1,15 @@
 var formLink = document.querySelector(".write-us-button");
-
 var formPopup = document.querySelector(".modal-1");
 var formClose = formPopup.querySelector(".modal-close");
 var formName = formPopup.querySelector("[name=name]");
 var email = formPopup.querySelector("[name=email]");
 var form = formPopup.querySelector("[name=letterForm]");
 var letter = formPopup.querySelector("[name=letter]");
-
 var mapLink = document.querySelector(".contacts-map");
-
 var mapPopup = document.querySelector(".modal-2");
 var mapClose = mapPopup.querySelector(".modal-close");
+var search = document.getElementById("search-form");
+var searchField = search.getElementById("search-field");
   
 formLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -40,4 +39,12 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-map");
+});
+
+searchField.addEventListener("focus", function (evt) {
+  search.classList.add("bottom-line");
+});
+
+searchField.addEventListener("blur", function (evt) {
+  search.classList.remove("bottom-line");
 });

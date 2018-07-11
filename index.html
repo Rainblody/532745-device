@@ -14,15 +14,15 @@
       <nav class="main-navigation index-main-navigation">
         <div class="main-logo-row">
           <h1 class="main-header-logo">
-            <a class="main-header-logo-text" >DEVICE</a>
+            <a class="main-header-logo-text">DEVICE</a>
           </h1>
         </div>
         <div class="first-header-row">
-          <form class="search-form" action="#" method="post">
+          <form id="search-form" class="search-form" action="#" method="post">
             <div class="search-image-container">
               <img class="search-image" src="img/search.svg" width="16" height="16" alt="Иконка «Поиск»">
             </div>
-            <input type="search" class="search" name="search" id="search" placeholder="Поиск по сайту">
+            <input id="search-field" type="search" class="search" name="search" placeholder="Поиск по сайту">
             <button type="submit" class="search-submit ">Найти</button>  
           </form>
           <div class="first-header-row-navigation">
@@ -152,7 +152,7 @@
               
             <div class="preview-content-container">
               <span class="slide-number">03</span>
-              <p class="preview-lead">Порхает как бабочка, жалит как пчела!</p>
+              <p class="preview-lead">Порхает как бабочка,<br> жалит как пчела!</p>
               <p class="preview-text">
                 Этот обычный, на первый взгляд, квадракоптер оснащен<br>
                 мощным лазером, замаскированым под стандартную камеру.
@@ -296,22 +296,22 @@
         <ul class="partners-list">
           <li>
             <a class="partners-list-dgi" href="partner.html">
-              <img class="partners-list-image" src="img/dgi.png" width="260" height="100" alt="Логотип Dgi">
+              <img id="dgi-image" class="partners-list-image" src="img/dgi.png" width="260" height="100" alt="Логотип Dgi">
             </a>
           </li>
           <li>
             <a class="partners-list-spgadgets" href="partner.html">
-              <img class="partners-list-image" src="img/spgadgets.png" width="260" height="100" alt="Логотип SpGagets">
+              <img id="spgadgets-image" class="partners-list-image" src="img/spgadgets.png" width="260" height="100" alt="Логотип SpGagets">
             </a>
           </li>
           <li>
             <a class="partners-list-gopro" href="partner.html">
-              <img class="partners-list-image" src="img/gopro.png" width="260" height="100" alt="Логотип GoPro">
+              <img id="gopro-image" class="partners-list-image" src="img/gopro.png" width="260" height="100" alt="Логотип GoPro">
             </a>
           </li>
           <li>
             <a class="partners-list-vive" href="partner.html">
-              <img class="partners-list-image" src="img/vive.png" width="260" height="100" alt="Логотип Vive">
+              <img id="vive-image" class="partners-list-image" src="img/vive.png" width="260" height="100" alt="Логотип Vive">
             </a>
           </li>
         </ul>
@@ -360,7 +360,7 @@
       <div class="main-footer-navigation">
         <div class="main-footer-left-column">
           <p class="main-footer-logo">
-            <a class="main-footer-logo-text">DEVICE</a>
+            <a class="main-footer-logo-text" href="https://htmlacademy.ru/intensive/htmlcss">DEVICE</a>
           </p>
           <p class="main-footer-adress">
             г. Москва, ул. Строителей, 15
