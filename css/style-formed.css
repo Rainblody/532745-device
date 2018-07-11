@@ -658,11 +658,7 @@ a{
   width: 360px;
   padding-left: 20px;
   box-sizing: border-box;
-  margin-bottom: 93px;
-}
-
-.letter-text{
-  margin-top: -93px;
+  margin-bottom: 92px;
 }
 
 .write-to-us-form-name,
@@ -713,6 +709,11 @@ a{
   resize: none;
 }
 
+.letter-textarea{
+  position: relative;
+  bottom: 59px;
+}
+
 .moved-list-item{
   margin-left: -37px;
 }
@@ -730,7 +731,7 @@ a{
   letter-spacing: 3px;
   text-transform: uppercase;
   position: absolute;
-  top: 440px;
+  top: 435px;
   
   width: 200px;
   border: none;
