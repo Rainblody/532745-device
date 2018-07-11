@@ -421,7 +421,7 @@ a{
 }
 
 .partners-list-image{
-  opacity: 0.19;
+  opacity: 0.3;
 }
 
 .about-us,
@@ -1371,12 +1371,6 @@ a{
   align-content: center;
 }
 
-.features-list-content{
-  width: 700px;
-  display: flex;
-  flex-direction: row;
-}
-
 .features-list-text{
   width: 460px;
 }
@@ -2202,4 +2196,16 @@ a{
 
 .page-button-container:active a{
   color: rgba(0,0,0,0.3);
+}
+
+.image-hided{
+  display: none;
+}
+
+.partners-list-image-link:hover .image-not-hided{
+  display: none;
+}
+.partners-list-image-link:hover .image-hided{
+  display: block;
+  opacity: 1;
 }
