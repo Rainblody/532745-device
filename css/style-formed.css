@@ -939,6 +939,17 @@ a{
   letter-spacing: 0.01em;
 }
 
+.features p{
+  margin: 0;
+  position: relative;
+  bottom: 10px;
+}
+
+.features h3{
+  position: relative;
+  bottom: 10px;
+}
+
 .goods-information{
   display: flex;
   justify-content: space-between;
@@ -1416,6 +1427,7 @@ a{
 
 .features-list-headline{
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
 }
 
@@ -1444,6 +1456,11 @@ a{
 
 .feature-image{
   position: absolute;
+  bottom: 20px;
+}
+
+.forward-button{
+  padding-left: 5px;
 }
 
 .partners-container{
@@ -2284,6 +2301,7 @@ a{
 }
 
 .right-table-column{
+  position: relative;
   right: 27px;
 }
 
