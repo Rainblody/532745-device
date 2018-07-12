@@ -52,10 +52,11 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face{
   font-family: "Gilroy";
-  src: local("../font/Gilroy ExtraBold"), local("../font/Gilroy-ExtraBold"), url('../font/Gilroyextrabold.woff2') format("woff2"), url("../font/Gilroyextrabold.woff") format("woff"), url("../font/Gilroyextrabold.ttf") format("truetype");
- font-weight: 800;
+  src: local("../font/Gilroy ExtraBold"), local("../font/Gilroy-ExtraBold"), url("../font/Gilroyextrabold.woff2") format("woff2"), url("../font/Gilroyextrabold.woff") format("woff"), url("../font/Gilroyextrabold.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -66,7 +67,6 @@ body{
   font-weight: 300;
   letter-spacing: -0.2px;
   color: #000000;
-  
   background-color: #ffffff;
 }
 
@@ -145,7 +145,7 @@ a{
 .search-submit:hover,
 .search-submit:active,
 .search-submit:focus{
-    display: block;
+  display: block;
 }
 
 .search-submit:hover{
@@ -194,7 +194,6 @@ a{
   opacity: 0.3;
 }
 
-
 .preview-lead{
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
@@ -204,7 +203,7 @@ a{
   text-transform: none;
   color: #000000;
   margin: 0;
-  max-width: 1000px;
+  max-width: 500px;
   padding: 0;
 }
 
@@ -341,10 +340,8 @@ a{
   text-transform: uppercase;
   color: #000000;
   border: none;
-  
   width: 260px;
   height: 40px;
-  
   background: linear-gradient(to top, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 }
 
@@ -398,6 +395,7 @@ a{
 .button:active{
   color: rgba(0,0,0,0.3);
 }
+
 .feature-buttons-list{
   margin: 0;
   padding: 0;
@@ -470,7 +468,6 @@ a{
   position: relative;
   top: 49px;
   right: 23px;
-  
 }
 
 .about-us-delivery-list a{
@@ -588,7 +585,6 @@ a{
 
 .main-footer-icon{
   opacity: 1;
-  
   margin-top: 62px;
   position: relative;
   left: 1px;
@@ -648,6 +644,7 @@ a{
   margin:auto;
   z-index: 10;
 }
+
 .modal-map{
   display: flex;
   height: 559px;
@@ -664,7 +661,7 @@ a{
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  minheight: 553px;
+  min-height: 553px;
   width: 960px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   background-color: #ffffff;
@@ -756,7 +753,6 @@ a{
   text-transform: uppercase;
   position: absolute;
   top: 435px;
-  
   width: 200px;
   border: none;
 }
@@ -843,7 +839,6 @@ a{
   color: #000000;
   width: 200px;
   height: 40px;
-  
   border: none;
 }
 
@@ -1043,16 +1038,14 @@ a{
 
 .main-header{
   margin: 0 auto;
-  
   width: 1160px;
-  
 }
 
 .main-navigation{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   width: 1160px;
+  width: 1160px;
   box-sizing: border-box;
   min-height: 186px;
   margin-top: 39px;
@@ -1409,7 +1402,6 @@ a{
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  
 }
 
 .feature-buttons-list-container{
@@ -1601,6 +1593,7 @@ a{
   display: flex;
   justify-content: space-between;
 }
+
 .main-footer ul,
 .main-footer p{
   margin-left: 0;
@@ -1608,6 +1601,7 @@ a{
   margin-bottom: 0;
   padding: 0;
 }
+
 .main-footer-left-column{
   margin-top: 60px;
   width: 220px;
@@ -1651,7 +1645,6 @@ a{
   display: flex;
   width: 425px;
   justify-content: space-between;
-  
 }
 
 .main-footer-social{
@@ -1992,7 +1985,7 @@ a{
   }
 }
 
-@keyframes shake {
+@keyframes shake{
   0%,
   100% {
     -webkit-transform: translateX(0);
@@ -2160,19 +2153,19 @@ a{
   opacity: 1;
 }
 
-#checkbox-1:checked ~ .checkbox-label::before,
-#checkbox-2:checked ~ .checkbox-label::before,
-#checkbox-3:checked ~ .checkbox-label::before,
-#checkbox-4:checked ~ .checkbox-label::before,
-#checkbox-5:checked ~ .checkbox-label::before{
+.checkbox-1:checked ~ .checkbox-label::before,
+.checkbox-2:checked ~ .checkbox-label::before,
+.checkbox-3:checked ~ .checkbox-label::before,
+.checkbox-4:checked ~ .checkbox-label::before,
+.checkbox-5:checked ~ .checkbox-label::before{
   content: url(../img/checkbox-on.svg);
 }
 
-#checkbox-1:disabled ~ .checkbox-label::before,
-#checkbox-2:disabled ~ .checkbox-label::before,
-#checkbox-3:disabled ~ .checkbox-label::before,
-#checkbox-4:disabled ~ .checkbox-label::before,
-#checkbox-5:disabled ~ .checkbox-label::before{
+.checkbox-1:disabled ~ .checkbox-label::before,
+.checkbox-2:disabled ~ .checkbox-label::before,
+.checkbox-3:disabled ~ .checkbox-label::before,
+.checkbox-4:disabled ~ .checkbox-label::before,
+.checkbox-5:disabled ~ .checkbox-label::before{
   opacity: 0.3;
 }
 
@@ -2208,13 +2201,13 @@ a{
   opacity: 1;
 }
 
-#radio-1:checked ~ .radio-label:first-of-type::before,
-#radio-2:checked ~ .radio-label:last-of-type::before{
+.radio-1:checked ~ .radio-label:first-of-type::before,
+.radio-2:checked ~ .radio-label:last-of-type::before{
   content: url(../img/radio-on.svg);
 }
 
-#radio-1:disabled ~ .radio-label:first-of-type,
-#radio-2:disabled ~ .radio-label:last-of-type{
+.radio-1:disabled ~ .radio-label:first-of-type,
+.radio-2:disabled ~ .radio-label:last-of-type{
   opacity: 0.3;
 }
 
