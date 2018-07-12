@@ -349,7 +349,7 @@ a{
   width: 200px;
   position: absolute;
   left: 80px;
-  top: 190px;
+  top: 172px;
   z-index: 10;
   display: none;
 }
@@ -723,7 +723,7 @@ a{
   height: 156px;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .letter-text{
@@ -952,6 +952,7 @@ a{
   line-height: 24px;
   font-weight: 300;
   color: #000000;
+  margin-right: 5px;
 }
 
 .good-item{
@@ -1268,13 +1269,14 @@ a{
 
 .bracelet{
   position: relative;
-  top: 25px;
+  left: 6px;
+  top: 11px;
 }
 
 .copter{
   position: relative;
-  left: 5px;
-  bottom: 10px;
+  left: 11px;
+  bottom: 11px;
 }
 
 .preview-content-container{
@@ -1876,13 +1878,13 @@ a{
 }
 
 .modal-fitness-smart{
-  margin-left: 57px;
+  margin-left: 55px;
 }
 
 .modal-copters{
   position: relative;
-  left: 243px;
-  bottom: 72px;
+  left: 254px;
+  bottom: 71px;
 }
 
 .slide-number{
@@ -1891,6 +1893,7 @@ a{
   font-size: 179.2px;
   font-weight: 800;
   position: absolute;
+  letter-spacing: 0.01em;
   top: 60px;
   right: 47px;
   z-index: -1;
@@ -2278,6 +2281,10 @@ a{
 .middle-table-column{
   position: relative;
   right: 8px;
+}
+
+.right-table-column{
+  right: 27px;
 }
 
 .features-image-container{
