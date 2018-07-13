@@ -360,8 +360,8 @@ a{
   font-size: 13px;
   opacity: 0.6;
   position: absolute;
-  left: 100px;
-  top: 230px;
+  left: 102px;
+  top: 228px;
   z-index: 10;
   display: none;
 }
@@ -1027,6 +1027,10 @@ a{
   min-width: 90px;
 }
 
+.sing-in-interface-footer-link{
+  margin-left: 3px;
+}
+
 .pages-button{
   letter-spacing: 3px;
 }
@@ -1164,7 +1168,7 @@ a{
 .main-navigation-catalog{
   display: flex;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .main-navigation-catalog-item{
@@ -1537,7 +1541,7 @@ a{
 .partners{
   margin: 0 auto;
   margin-top: 94px;
-  width: 1160px;  
+  width: 1160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1906,12 +1910,17 @@ a{
 
 .modal-fitness-smart{
   margin-left: 55px;
+  margin-top: 2px;
 }
 
 .modal-copters{
   position: relative;
   left: 254px;
   bottom: 71px;
+}
+
+.modal-link-1{
+  margin-top: 1px;
 }
 
 .slide-number{
@@ -2099,7 +2108,7 @@ a{
 .bar-radio-max:active{
   width: 26px;
   height: 26px;
-} 
+}
 
 .price-value{
   font-family: "Gilroy", Arial, sans-serif;
