@@ -94,7 +94,7 @@ a{
   letter-spacing: 0.7px;
   color: #ffffff;
   position: relative;
-  bottom: 22px;
+  bottom: 25px;
   right: 3px;
 }
 
@@ -122,7 +122,7 @@ a{
 
 .search:focus{
   opacity: 1;
-  outline: none; 
+  outline: none;
 }
 
 .search-submit{
@@ -310,12 +310,12 @@ a{
   color: rgba(0,0,0,0.3);
 }
 
-.categories-container{ 
+.categories-container{
   background-color: #f7e296;
   margin-bottom: 33px;
 }
 
-.categories-container:hover{ 
+.categories-container:hover{
   background-color: #f0c52e;
   transition: 0.3s;
 }
@@ -925,7 +925,7 @@ a{
   font-size: 13px;
   line-height: 36px;
   font-weight: 300;
-  color: #464646; 
+  color: #464646;
   border: none;
   background: none;
 }
@@ -1011,7 +1011,7 @@ a{
   position: relative;
   bottom: 11px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   background-color: #efefef;
   align-items: center;
 }
@@ -1207,7 +1207,6 @@ a{
 
 .slider-container{
   margin: 0 auto;
-  
   width: 1160px;
 }
 
@@ -1264,6 +1263,12 @@ a{
   right: 82px;
 }
 
+#slider-button-1:focus ~ .slider-buttons,
+#slider-button-2:focus ~ .slider-buttons,
+#slider-button-3:focus ~ .slider-buttons{
+  outline: 1px solid blue;
+}
+
 #slider-button-1:checked ~ .slider-buttons .slider-button-1::before,
 #slider-button-2:checked ~ .slider-buttons .slider-button-2::before,
 #slider-button-3:checked ~ .slider-buttons .slider-button-3::before{
@@ -1299,7 +1304,6 @@ a{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  
 }
 
 .preview-content-container::before{
@@ -1396,6 +1400,12 @@ a{
 #feature-button-2:checked ~ .features-list #feature-2,
 #feature-button-3:checked ~ .features-list #feature-3{
   display: flex;
+}
+
+#feature-button-1:focus ~ .feature-buttons-container,
+#feature-button-2:focus ~ .feature-buttons-container,
+#feature-button-3:focus ~ .feature-buttons-container{
+  outline: 1px solid blue;
 }
 
 .features-list-item{
@@ -2181,6 +2191,14 @@ a{
   content: url(../img/checkbox-on.svg);
 }
 
+.checkbox-1:focus ~ .checkbox-label::before,
+.checkbox-2:focus ~ .checkbox-label::before,
+.checkbox-3:focus ~ .checkbox-label::before,
+.checkbox-4:focus ~ .checkbox-label::before,
+.checkbox-5:focus ~ .checkbox-label::before{
+  outline: 1px solid blue;
+}
+
 .checkbox-1:disabled ~ .checkbox-label::before,
 .checkbox-2:disabled ~ .checkbox-label::before,
 .checkbox-3:disabled ~ .checkbox-label::before,
@@ -2224,6 +2242,11 @@ a{
 .radio-1:checked ~ .radio-label:first-of-type::before,
 .radio-2:checked ~ .radio-label:last-of-type::before{
   content: url(../img/radio-on.svg);
+}
+
+.radio-1:focus ~ .radio-label:first-of-type::before,
+.radio-2:focus ~ .radio-label:nth-of-type(2)::before{
+  outline: 1px solid blue;
 }
 
 .radio-1:disabled ~ .radio-label:first-of-type,

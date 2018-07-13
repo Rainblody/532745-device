@@ -11,7 +11,7 @@ if (formPopup !== null) {
   var email = formPopup.querySelector("[name=email]");
   var form = formPopup.querySelector("[name=letterForm]");
   var letter = formPopup.querySelector("[name=letter]");
-  
+
   formLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     formPopup.classList.add("modal-letter");
@@ -35,7 +35,7 @@ if (formPopup !== null) {
 
 if (mapPopup !== null) {
   var mapClose = mapPopup.querySelector(".modal-close");
-  
+
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-map");
